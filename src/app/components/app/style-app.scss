@@ -1,0 +1,244 @@
+@import '~material-colors/dist/colors';
+
+body {
+    background-color: rgba($md-grey-200, 1);
+    font-weight: 300;
+}
+
+li {
+    line-height: 1.83em;
+}
+
+p,ol,ul{
+    font-size: 13.5px;
+}
+
+p{
+    line-height: 1.83em;
+}
+
+h4{
+    margin: 2px;
+    text-align: center;
+}
+
+.title{
+    text-align: center;
+}
+.title h2{
+    // margin: 1px;
+    margin-top: 1px;
+    margin-bottom: 4px;
+    color: white;
+    font-weight: 400;
+
+}
+
+.title-container{
+    width: 100%;
+    background: $md-blue-grey-500;
+    color: white;
+    padding: 10px 0px;
+    margin: 10px 0px 4px;
+    box-shadow: 0px .5px 2px rgba(0,0,0,0.18), 0px 1px 1px rgba(0,0,0,0.18);
+}
+.title-container a{
+    color: white;
+}
+
+
+.pic { 
+    margin-top: 10px;
+    width: 100%; 
+    height: 140px; 
+    overflow: hidden; 
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 6px, rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border: solid 3px white;
+    margin-bottom: 10px;
+}
+.pic img { 
+    margin-top: -60px;
+    width: 100%;
+}
+
+.main ul {
+ list-style-type: circle;
+ // padding-left: 10px;
+ // padding:
+ // margin-right: 8px;
+ // font-size: 13px;
+ }
+
+.main {
+    // padding: 20px;
+    margin-top: 15px;
+    margin-left: 20%;
+    width: 60%;
+}
+
+.flex-container-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.flex-container-row {
+    display: flex;
+    flex-direction: row;
+    // flex-wrap: nowrap;
+    justify-content: flex-around;
+    //align-content: flex-start;
+    //align-items: flex-start;
+}
+
+
+foreignObject .katex .vlist>span{
+    position: inherit;
+}
+
+
+button.btn {
+    // margin: 10px 0px;
+    margin-bottom: 10px;
+    // border: 2px solid white;
+    border: none;
+    padding: 11px;
+    width: 100%;
+    background: $md-blue-grey-500;
+    color: white;
+    text-align: center;
+    horizontal-align: center;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 6px, rgba(0, 0, 0, 0.16) 0px 1px 4px
+}
+
+
+.g-path .katex-span {
+    color: rgba($md-grey-900,.8);
+}
+
+span.katex{
+    // font-size: 1.0em;
+    font-size:14px;
+}
+
+.special{
+    // position: absolute;
+    // height: 35px;
+    // background: $md-blue-grey-100;
+    width: 100%;
+    font-weight: 300;
+    background: $md-blue-grey-500;
+    color: white;
+    padding: 5px 0px;
+    margin: 10px 0px 4px;
+    // padding: 
+    // color: $md-grey-900;
+    // background: white;
+    box-shadow: 0px .5px 2px rgba(0,0,0,0.18), 0px 1px 1px rgba(0,0,0,0.18);
+  // border-radius: 2px;
+}
+
+.content{
+    background: white;
+    box-shadow: 0px .5px 2px rgba(0,0,0,0.18), 0px 1px 1px rgba(0,0,0,0.18);
+    padding: 15px 30px;
+  // background: rgba(#eee,1);
+
+}
+
+.special h4{
+    font-weight: 300;
+    margin: 8px;
+}
+
+.plot-container{
+      // justify-content: center;
+      // align-content: center;
+      // align-items: center;
+      // position 
+      width: 75%;
+      margin-right: 25px;
+      // background: white;
+      // box-sizing: border-box;
+    // box-shadow: rgba(0, 0, 0, 0.16) 0px .5px 4px, rgba(0, 0, 0, 0.16) 0px .5px 2px;
+}
+
+.plot-container>div{
+      padding: 18px 25px 0px 8px;
+}
+
+
+.plot-inner-container{
+    // padding: 8px;
+    // margin: 8px;
+    // width: 100%;
+    // height: 100%;
+}
+
+.blue{
+    background-color: $md-light-blue-500;
+    color: rgb(252, 249, 249);
+    padding: 1px 3px;
+    border-radius: 1px;
+}
+
+button:focus {outline:0;}
+
+.legend{
+    //justify-content: space-between;
+}
+.legend div{
+    flex: 1;
+}
+
+.legend p, .legend li{
+    font-size: 13px;
+}
+
+
+.pic-frame{
+    // backgrond-color: red;
+    // height: 100%; 
+    // width: 100%;
+    margin: 3px 0px;
+    // height: 150px; 
+    // position: relative;
+    // background-image: url("./app/yellen-killing-it-01.png"); background-size: 100% 100%;
+    // background-size: cover;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.img-container{
+    width: 100%;
+    height: 200px;
+    // height: 100%;
+    // height: 100%;
+
+}
+
+.img-container img{
+    // width: auto;
+    text-align: center;
+
+    max-height: 100%;
+    max-width: 100%;
+    width: auto;
+
+    display: block;
+    box-sizing: border-box;
+    border: solid 5px white;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 6px, rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.img-face.show{
+    opacity: 1;
+    transition: opacity .2s ease-in-out;
+}
+
+.img-face.hide{
+    opacity: 0;
+    transition: opacity .2s ease-in-out;
+}
