@@ -28,17 +28,20 @@ const CC = {
 };
 
 const AppComponent = React.createClass({
-  paused: true,
-  timer: null,
+//class AppComponent extends React.Component {
+	paused: true,
+	timer: null,
   componentDidMount(){
   	this.pausePlay();
   	setTimeout(()=>{
   		this.pausePlay();
   	}, 2200);
   	//!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
-  },
+	},
+	
   pausePlay() {
-    if (!(this.paused = !this.paused)) {
+		console.log("this.paused = ", this.paused)
+			if (!(this.paused = !this.paused)) {
       let last = 0;
       this.timer = d3Timer
         .timer(elapsed => {
@@ -48,7 +51,8 @@ const AppComponent = React.createClass({
           this.props.tick(dt);
         });
     }
-  },
+	},
+	
   render() {
     return (
       <div className='main'>
@@ -122,6 +126,7 @@ const AppComponent = React.createClass({
     );
   }
 });
+
 
 
 const mapActionsToProps = dispatch => {

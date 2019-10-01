@@ -9,12 +9,17 @@ const rand = d3.random.normal();
 
 const reduceTick = (state, action) => {
 console.log("state = ", state)
-    let { πₑ, y, u, time, history } = state;
-    const { σπₑ, σπ, σy, σu, ȳ, ū, r̄, i } = state;
+    let { π₁, y₁, time, history } = state;
+    const {A, a, α , πᵀ, yₑ} = state;
     const dt = action.dt / 1000;
     const ϵ = rand() * .003;
     const η = Math.random() < .25 ? rand() * .015 : 0;
     const bigOne = Math.random() < .04 ? rand() * .04 : 0;
+
+    const ̇π = α * (y₁ - yₑ) 
+    const  π₁ += 
+
+
     const r = i - πₑ;
     const ẏ = -(r - r̄) / σy + η + bigOne;
     y += ẏ * dt; // with demand shock
